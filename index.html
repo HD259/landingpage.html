@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WaveShift | Weather Rebooking for Surf Schools</title>
+
+<style>
+:root{
+--ocean:#0077b6;
+--wave:#00b4d8;
+--sand:#f4d58d;
+--dark:#17324d;
+--success:#2a9d8f;
+--light:#f5fbff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
+
+body{
+background:var(--light);
+color:var(--dark);
+line-height:1.6;
+}
+
+.hero{
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:2.4rem;
+line-height:1.2;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+font-size:1.1rem;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.section{
+background:white;
+padding:24px;
+margin:20px 0;
+border-radius:20px;
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+h2{
+color:var(--ocean);
+margin-bottom:15px;
+}
+
+.quote{
+background:#eef8ff;
+border-left:5px solid var(--wave);
+padding:15px;
+border-radius:12px;
+font-style:italic;
+}
+
+.steps{
+display:grid;
+gap:15px;
+}
+
+.step{
+background:#f7fcff;
+padding:18px;
+border-radius:16px;
+}
+
+.number{
+width:40px;
+height:40px;
+border-radius:50%;
+background:var(--ocean);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.price-box{
+background:#eef8ff;
+padding:25px;
+border-radius:16px;
+text-align:center;
+}
+
+.price{
+font-size:2rem;
+font-weight:700;
+color:var(--ocean);
+}
+
+.button{
+display:block;
+width:100%;
+padding:18px;
+border-radius:14px;
+text-align:center;
+text-decoration:none;
+font-weight:700;
+font-size:1rem;
+margin-top:15px;
+border:none;
+cursor:pointer;
+}
+
+.demo-btn{
+background:var(--ocean);
+color:white;
+}
+
+.cta-btn{
+background:var(--success);
+color:white;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:1px solid #d9d9d9;
+border-radius:12px;
+font-size:1rem;
+}
+
+.small{
+font-size:.9rem;
+color:#666;
+margin-top:10px;
+}
+
+.hidden{
+display:none;
+}
+
+footer{
+text-align:center;
+padding:30px;
+}
+
+footer a{
+text-decoration:none;
+font-weight:600;
+color:var(--ocean);
+}
+
+@media(min-width:768px){
+
+.hero h1{
+font-size:3.2rem;
+}
+
+.steps{
+grid-template-columns:repeat(3,1fr);
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<h1>Stop Losing Lesson Revenue When the Weather Turns</h1>
+<p>
+WaveShift helps Irish surf schools rebook cancelled lessons in minutes instead of spending hours on calls and WhatsApp messages.
+</p>
+</section>
+
+<div class="container">
+
+<section class="section">
+<h2>The Problem</h2>
+
+<div class="quote">
+“When the surf is unsafe, I spend half the day ringing people, checking spaces and moving bookings around. By the time I reach everyone, some have already made other plans.”
+</div>
+
+<p class="small">
+Example customer quote created for research purposes. Not a real testimonial.
+</p>
+</section>
+
+<section class="section">
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<div class="number">1</div>
+<h3>Cancel</h3>
+<p>
+Tap once to cancel a weather-affected lesson and move everyone into a rebooking queue.
+</p>
+</div>
+
+<div class="step">
+<div class="number">2</div>
+<h3>Rebook</h3>
+<p>
+See affected customers and the next available sessions with enough free places.
+</p>
+</div>
+
+<div class="step">
+<div class="number">3</div>
+<h3>Protect Revenue</h3>
+<p>
+Track bookings still waiting and the value at risk so nobody gets forgotten.
+</p>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>Try the Demo</h2>
+
+<p>
+Current Alpha Features:
+</p>
+
+<ul style="margin-left:20px;margin-top:10px;">
+<li>Today's Sessions View</li>
+<li>Rebooking Queue</li>
+<li>Red and Amber Waiting Alerts</li>
+<li>Value at Risk Dashboard</li>
+<li>Mobile-Friendly Large Buttons</li>
+</ul>
+
+<a
+href="https://YOUR-DEMO-LINK-HERE"
+target="_blank"
+class="button demo-btn">
+Try the Demo
+</a>
+
+<p class="small">
+Replace the demo URL aboveon>
+
+<section class="section">
+<h2>Pricing</h2>
+
+<div class="price-box">
+
+<div class="price">€750 Setup</div>
+<p>One-off implementation fee</p>
+
+<br>
+
+<div class="price">€79 / Month</div>
+<p>Unlimited rebooking management</p>
+
+</div>
+
+<p class="small">
+Assumption: recovering even a small number of lost lesson bookings should exceed the monthly subscription cost.
+</p>
+
+</section>
+
+<section class="section">
+<h2>Join the Waiting List</h2>
+
+<p>
+Interested in early access?
+</p>
+
+<form id="waitlistForm">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Email Address"
+required>
+
+<button
+type="submit"
+class="button cta-btn">
+Join Waiting List
+</button>
+
+</form>
+
+<div id="thankYou" class="hidden">
+
+<h3>Thank You</h3>
+
+<p>
+Thanks for your interest in WaveShift.
+<br><br>
+This form does not send or store any data.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+<h2>Transparency</h2>
+
+<p>
+This page describes a concept and alpha-stage product demonstration.
+</p>
+
+<p>
+No customer counts, reviews, ratings or performance statistics are claimed.
+Features beyond the current alpha should be considered planned future functionality.
+</p>
+</section>
+
+</div>
+
+<footer>
+<a href="notes.html">Behind the build</a>
+</footer>
+
+<script>
+document.getElementById("waitlistForm").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+this.style.display = "none";
+
+document.getElementById("thankYou").classList.remove("hidden");
+
+});
+</script>
+
+</body>
+</html>
+``
